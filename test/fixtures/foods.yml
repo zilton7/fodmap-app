@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  category: 1
+  overall_status: 1
+  small_portion_desc: MyString
+  large_portion_desc: MyString
+  small_portion_oligos: 1
+  small_portion_fructose: 1
+  small_portion_polyols: 1
+  small_portion_lactose: 1
+  large_portion_oligos: 1
+  large_portion_fructose: 1
+  large_portion_polyols: 1
+  large_portion_lactose: 1
+  notes: MyString
+
+two:
+  name: MyString
+  category: 1
+  overall_status: 1
+  small_portion_desc: MyString
+  large_portion_desc: MyString
+  small_portion_oligos: 1
+  small_portion_fructose: 1
+  small_portion_polyols: 1
+  small_portion_lactose: 1
+  large_portion_oligos: 1
+  large_portion_fructose: 1
+  large_portion_polyols: 1
+  large_portion_lactose: 1
+  notes: MyString

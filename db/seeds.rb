@@ -1,9 +1,27 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+require 'csv'
+
+csv_file = File.read(Rails.root.join('lib', 'data', 'fodmap_foods.csv'))
+csv = CSV.parse(csv_file, headers: true)
+
+Food.delete_all
+
+csv.each do |row|
+  attrs = {
+    name: row['Food name en_US'],
+    category: row['Category'],
+    overall_status: row['Overall status'],
+    small_portion_desc: row['Small portion desc'],
+    small_portion_oligos: row['Small portion oligos'],
+    small_portion_fructose: row['Small portion fructose'],
+    small_portion_polyols: row['Small portion polyols'],
+    small_portion_lactose: row['Small portion lactose'],
+    large_portion_desc: row['Large portion desc'],
+    large_portion_oligos: row['Large portion oligos'],
+    large_portion_fructose: row['Large portion fructose'],
+    large_portion_polyols: row['Large portion polyols'],
+    large_portion_lactose: row['Large portion lactose'],
+    notes: row['Notes']
+  }
+
+  Food.create!(attrs) if Food.where(name: attrs[:name]).none?
+end
