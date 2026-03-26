@@ -6,4 +6,8 @@ class FoodsController < ApplicationController
     end
     @foods = @foods.order(:name)
   end
+
+  def show
+    @food = Food.find(params[:id])
+  end
 end

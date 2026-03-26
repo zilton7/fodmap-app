@@ -41,7 +41,7 @@
                    "bg-gray-100 text-gray-800 border-gray-200"
                  end
               %>
-          <div class="<%= status_colors %> rounded-xl shadow-sm border border-gray-100 p-5 hover:shadow-md transition-shadow flex flex-col justify-between">
+          <%= link_to food_path(food), data: { turbo_frame: "modal" }, class: "#{status_colors} rounded-xl shadow-sm border border-gray-100 p-5 hover:shadow-md transition-shadow flex flex-col justify-between" do %>
             <div class="mb-2">
               <h2 class="text-xl font-semibold text-gray-800"><%= food.name %></h2>
               <p class="text-sm text-gray-500 capitalize"><%= food.category.to_s.gsub('_', ' ') %></p>
@@ -59,7 +59,7 @@
                 Status: <%= food.overall_status.to_s.titleize.presence || 'N/A' %>
               </span>
             </div>
-          </div>
+          <% end %>
         <% end %>
       </div>
     <% else %>

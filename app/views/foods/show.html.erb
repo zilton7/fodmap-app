@@ -1,0 +1,129 @@
+<%= turbo_frame_tag "modal" do %>
+  <div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-opacity-50 backdrop-blur-sm transition-opacity" 
+    data-controller="modal" 
+    data-action="click->modal#close">
+    <div class="bg-white rounded-xl shadow-xl max-w-3xl w-full max-h-[90vh] flex flex-col overflow-hidden" data-action="click->modal#stopPropagation">
+      
+      <!-- Modal Header -->
+      <div class="flex justify-between items-center p-6 border-b border-gray-100 bg-gray-50 flex-shrink-0">
+        <div>
+          <h2 class="text-2xl font-bold text-gray-800"><%= @food.name %></h2>
+          <p class="text-sm font-medium text-gray-500 capitalize mt-1"><%= @food.category.to_s.gsub('_', ' ') %></p>
+        </div>
+        <%= link_to foods_path, class: "text-gray-400 hover:text-red-500 transition-colors bg-white rounded-full p-2 shadow-sm border border-gray-100", data: { turbo_frame: "_top" } do %>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        <% end %>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 overflow-y-auto flex-grow">
+        <div class="flex flex-col md:flex-row gap-8">
+          <!-- Image Section -->
+          <div class="w-full md:w-1/3 flex justify-center items-start">
+            <% if File.exist?("app/assets/images/foods/#{@food.image_file_name || @food.name.downcase.gsub(' ', '_')}.webp") %>
+              <%= image_tag "foods/#{@food.image_file_name || @food.name.downcase.gsub(' ', '_')}.webp", alt: @food.name, class: "w-full max-w-[200px] object-contain rounded-xl drop-shadow-md" %>
+            <% else %>
+              <%= image_tag "foods/default.webp", alt: @food.name, class: "w-full max-w-[200px] object-contain rounded-xl drop-shadow-md" %>
+            <% end %>
+          </div>
+
+          <!-- Info Section -->
+          <div class="w-full md:w-2/3">
+            <div class="mb-6 flex items-center">
+              <%
+                 status_colors = case @food.overall_status
+                 when 'high'
+                   "bg-red-100 text-red-800 border-red-200"
+                 when 'medium'
+                   "bg-yellow-100 text-yellow-800 border-yellow-200"
+                 when 'low'
+                   "bg-green-100 text-green-800 border-green-200"
+                 else
+                   "bg-gray-100 text-gray-800 border-gray-200"
+                 end
+                 status_dot = case @food.overall_status
+                 when 'high' then 'bg-red-500'
+                 when 'medium' then 'bg-yellow-500'
+                 when 'low' then 'bg-green-500'
+                 else 'bg-gray-400'
+                 end
+              %>
+              <span class="px-3 py-1 rounded-full text-sm font-semibold border <%= status_colors %> flex items-center">
+                <span class="w-2.5 h-2.5 rounded-full mr-2 <%= status_dot %>"></span>
+                Overall Status: <%= @food.overall_status.to_s.titleize.presence || 'N/A' %>
+              </span>
+            </div>
+
+            <h3 class="text-lg font-bold text-gray-800 mb-4 border-b pb-2">Portion Details</h3>
+            
+            <div class="overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
+              <table class="min-w-full divide-y divide-gray-200 text-sm text-left">
+                <thead class="bg-gray-50 text-gray-700">
+                  <tr>
+                    <th class="px-4 py-3 font-semibold text-gray-900 border-r border-gray-200 bg-gray-100">Portion</th>
+                    <th class="px-3 py-3 font-medium text-center">Oligos</th>
+                    <th class="px-3 py-3 font-medium text-center">Fructose</th>
+                    <th class="px-3 py-3 font-medium text-center">Polyols</th>
+                    <th class="px-3 py-3 font-medium text-center">Lactose</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200 bg-white">
+                  <% 
+                    def status_icon(val)
+                      val_str = val.to_s.downcase
+                      if val_str == 'high'
+                        '<svg class="w-5 h-5 text-red-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>'.html_safe
+                      elsif val_str == 'low'
+                        '<svg class="w-5 h-5 text-green-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>'.html_safe
+                      elsif val_str == 'medium'
+                        '<span class="text-yellow-500 font-bold mx-auto text-lg">-</span>'.html_safe
+                      else
+                        '<span class="text-gray-300 mx-auto">-</span>'.html_safe
+                      end
+                    end 
+                  %>
+                  <!-- Small Portion Row -->
+                  <tr class="hover:bg-gray-50 transition-colors">
+                    <td class="px-4 py-3 font-medium text-gray-800 border-r border-gray-200 whitespace-nowrap"><%= @food.small_portion_desc %></td>
+                    <td class="px-3 py-3 align-middle"><%= status_icon(@food.small_portion_oligos) %></td>
+                    <td class="px-3 py-3 align-middle"><%= status_icon(@food.small_portion_fructose) %></td>
+                    <td class="px-3 py-3 align-middle"><%= status_icon(@food.small_portion_polyols) %></td>
+                    <td class="px-3 py-3 align-middle"><%= status_icon(@food.small_portion_lactose) %></td>
+                  </tr>
+
+                  <!-- Large Portion Row (if exists) -->
+                  <% if @food.large_portion_desc.present? %>
+                    <tr class="hover:bg-gray-50 transition-colors">
+                      <td class="px-4 py-3 font-medium text-gray-800 border-r border-gray-200 whitespace-nowrap"><%= @food.large_portion_desc %></td>
+                      <td class="px-3 py-3 align-middle"><%= status_icon(@food.large_portion_oligos) %></td>
+                      <td class="px-3 py-3 align-middle"><%= status_icon(@food.large_portion_fructose) %></td>
+                      <td class="px-3 py-3 align-middle"><%= status_icon(@food.large_portion_polyols) %></td>
+                      <td class="px-3 py-3 align-middle"><%= status_icon(@food.large_portion_lactose) %></td>
+                    </tr>
+                  <% end %>
+                </tbody>
+              </table>
+            </div>
+            
+            <% if @food.notes.present? %>
+              <div class="mt-6 bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg">
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <svg class="h-5 w-5 text-blue-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-sm text-blue-700 font-medium">
+                      <%= @food.notes %>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
