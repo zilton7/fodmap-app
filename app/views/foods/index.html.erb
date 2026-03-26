@@ -1,0 +1,75 @@
+    <style>
+        .drop-shadow-lg {
+            --tw-drop-shadow: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.04)) drop-shadow(0 4px 3px rgba(0, 0, 0, 0.4));
+        }
+
+        img {
+            max-height: 50vmin;
+        }
+    </style>
+<div class="w-full">
+  <div class="mb-8 items-center justify-between">    
+    <%= form_with url: foods_path, method: :get, class: "flex items-center space-x-2", data: { turbo_frame: "foods", turbo_action: "advance" } do |form| %>
+      <div class="relative w-full">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+          <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <%= form.text_field :query, 
+              value: params[:query],
+              class: "bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 shadow-sm transition duration-200 outline-none", 
+              placeholder: "Search foods by name...",
+              oninput: "this.form.requestSubmit()" %>
+      </div>
+    <% end %>
+  </div>
+
+  <%= turbo_frame_tag "foods" do %>
+    <% if @foods.any? %>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <% @foods.each do |food| %>
+          <%
+                 status_colors = case food.overall_status
+                 when 'high'
+                   "bg-red-100 text-red-800 border-red-200"
+                 when 'medium'
+                   "bg-yellow-100 text-yellow-800 border-yellow-200"
+                 when 'low'
+                   "bg-green-100 text-green-800 border-green-200"
+                 else
+                   "bg-gray-100 text-gray-800 border-gray-200"
+                 end
+              %>
+          <div class="<%= status_colors %> rounded-xl shadow-sm border border-gray-100 p-5 hover:shadow-md transition-shadow flex flex-col justify-between">
+            <div class="mb-2">
+              <h2 class="text-xl font-semibold text-gray-800"><%= food.name %></h2>
+              <p class="text-sm text-gray-500 capitalize"><%= food.category.to_s.gsub('_', ' ') %></p>
+            </div>
+            <% if File.exist?("app/assets/images/foods/#{food.image_file_name || food.name.downcase.gsub(' ', '_')}.webp") %>
+              <%= image_tag "foods/#{food.image_file_name || food.name.downcase.gsub(' ', '_')}.webp", alt: food.name, class: "w-full h-64 object-contain rounded-lg drop-shadow-lg" %>
+            <% else %>
+              <%= image_tag "foods/default.webp", alt: food.name, class: "w-full h-64 object-contain rounded-lg drop-shadow-lg" %>
+            <% end %>
+            <div class="mt-4 flex flex-wrap gap-2 items-center">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border <%= status_colors %> flex items-center">
+                <span class="w-2 h-2 rounded-full mr-1.5 
+                  <%= food.overall_status == 'high' ? 'bg-red-500' : (food.overall_status == 'medium' ? 'bg-yellow-500' : (food.overall_status == 'low' ? 'bg-green-500' : 'bg-gray-400')) %>">
+                </span>
+                Status: <%= food.overall_status.to_s.titleize.presence || 'N/A' %>
+              </span>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% else %>
+      <div class="text-center py-12 bg-white rounded-xl border border-gray-200">
+        <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m-9 1V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+        </svg>
+        <h3 class="mt-2 text-sm font-semibold text-gray-900">No foods found</h3>
+        <p class="mt-1 text-sm text-gray-500">Try adjusting your search query.</p>
+      </div>
+    <% end %>
+  <% end %>
+</div>
