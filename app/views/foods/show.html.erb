@@ -10,9 +10,9 @@
           <h2 class="text-2xl font-bold text-gray-800"><%= @food.name %></h2>
           <p class="text-sm font-medium text-gray-500 capitalize mt-1"><%= @food.category.to_s.gsub('_', ' ') %></p>
         </div>
-        <%= link_to foods_path, class: "text-gray-400 hover:text-red-500 transition-colors bg-white rounded-full p-2 shadow-sm border border-gray-100", data: { turbo_frame: "_top" } do %>
+        <button type="button" class="text-gray-400 hover:text-red-500 transition-colors bg-white rounded-full p-2 shadow-sm border border-gray-100 cursor-pointer" data-action="click->modal#close">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-        <% end %>
+        </button>
       </div>
 
       <!-- Modal Body -->
