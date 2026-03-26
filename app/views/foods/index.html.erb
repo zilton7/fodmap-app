@@ -9,7 +9,8 @@
     </style>
 <div class="w-full">
   <div class="mb-8 items-center justify-between">    
-    <%= form_with url: foods_path, method: :get, class: "flex items-center space-x-2", data: { turbo_frame: "foods", turbo_action: "advance" } do |form| %>
+    <%= form_with url: foods_path, method: :get, class: "flex items-center space-x-2", 
+                  data: { turbo_frame: "foods", turbo_action: "advance" } do |form| %>
       <div class="relative w-full">
         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
           <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -43,7 +44,7 @@
               %>
           <%= link_to food_path(food), data: { turbo_frame: "modal" }, class: "#{status_colors} rounded-xl shadow-sm border border-gray-100 p-5 hover:shadow-md transition-shadow flex flex-col justify-between" do %>
             <div class="mb-2">
-              <h2 class="text-xl font-semibold text-gray-800"><%= food.name %></h2>
+              <h2 class="text-xl font-semibold text-gray-800"><%= food_name(food) %></h2>
               <p class="text-sm text-gray-500 capitalize"><%= food.category.to_s.gsub('_', ' ') %></p>
             </div>
             <% if File.exist?("app/assets/images/foods/#{food.image_file_name || food.name.downcase.gsub(' ', '_')}.webp") %>

@@ -1,413 +1,413 @@
-en:
+lt:
   foods:
     acai_powder:
-      name: "Acai Powder"
+      name: "Acai milteliai"
     adzuki_beans_boiled:
-      name: "Adzuki Beans (boiled)"
+      name: "Adzuki pupelės (virtos)"
     adzuki_beans_canned:
-      name: "Adzuki Beans (canned)"
+      name: "Adzuki pupelės (konservuotos)"
     agar_agar:
-      name: "Agar agar"
+      name: "agaras-agaras"
     agave_syrup_dark:
-      name: "Agave syrup (dark)"
+      name: "Agavos sirupas (tamsus)"
     agave_syrup_light:
-      name: "Agave syrup (light)"
+      name: "Agavos sirupas (šviesus)"
     alfalfa_lucerne:
-      name: "Alfalfa (lucerne)"
+      name: "Alfalfa (liucerna)"
     all_spice:
-      name: "All spice"
+      name: "Kvapusis pipiras"
     almond_butter:
-      name: "Almond butter"
+      name: "Migdolų sviestas"
     almond_meal:
-      name: "Almond meal"
+      name: "Migdolų miltai"
     almonds:
-      name: "Almonds"
+      name: "Migdolai"
     amaranth_flour:
-      name: "Amaranth flour"
+      name: "Amarantų miltai"
     amaranth_puffed_grain_cereal:
-      name: "Amaranth puffed grain cereal"
+      name: "Amarantų puffinti grūdai / dribsniai"
     apple_dried:
-      name: "Apple (dried)"
+      name: "Obuoliai (džiovinti)"
     apple_granny_smith:
-      name: "Apple (Granny Smith)"
+      name: "Obuoliai (Granny Smith)"
     apple_granny_smith_peeled:
-      name: "Apple (Granny Smith, peeled)"
+      name: "Obuoliai (Granny Smith, nulupti)"
     apple_pink_lady:
-      name: "Apple (Pink Lady)"
+      name: "Obuoliai (Pink Lady)"
     apple_pink_lady_peeled:
-      name: "Apple (Pink Lady, peeled)"
+      name: "Obuoliai (Pink Lady, nulupti)"
     apple_raspberry_cordial_50_100_juice:
-      name: "Apple & raspberry cordial (50-100% juice)"
+      name: "Obuolių ir aviečių sirupas (50-100% sulčių)"
     apple_cider_vinegar:
-      name: "Apple cider vinegar"
+      name: "Obuolių sidro actas"
     apple_juice_99_blend_reconstituted_and_fresh:
-      name: "Apple juice (99% blend, reconstituted and fresh)"
+      name: "Obuolių sultys (99% mišinys, atstatytos ir šviežios)"
     apple_juice_99_reconstituted:
-      name: "Apple juice (99% reconstituted)"
+      name: "Obuolių sultys (99% atstatytos)"
     apricot:
-      name: "Apricot"
+      name: "Abrikosas"
     apricot_canned:
-      name: "Apricot (canned)"
+      name: "Abrikosas (konservuotas)"
     apricot_dried:
-      name: "Apricot (dried)"
+      name: "Abrikosas (džiovintas)"
     arrowroot_flour:
-      name: "Arrowroot flour"
+      name: "Arrowroot miltai"
     artichoke_canned_hearts:
-      name: "Artichoke (canned hearts)"
+      name: "Artišokas (konservuotos širdys)"
     artichoke_globe:
-      name: "Artichoke (globe)"
+      name: "Artišokas (globe)"
     artichoke_jerusalem:
-      name: "Artichoke (Jerusalem)"
+      name: "Artišokas (Jerusalem)"
     artichoke_pickled_in_oil:
-      name: "Artichoke (pickled in oil)"
+      name: "Artišokas (marinuotas aliejuje)"
     asafoetida_powder:
-      name: "Asafoetida powder"
+      name: "Asafoetida milteliai"
     asian_chives:
-      name: "Asian chives"
+      name: "Azijiniai česnakai"
     asparagus:
-      name: "Asparagus"
+      name: "Šparagai"
     aubergine:
-      name: "Aubergine"
+      name: "Baklažanas"
     aubergine_dip:
-      name: "Aubergine dip"
+      name: "Baklažano padažas"
     avocado:
-      name: "Avocado"
+      name: "Avokadas"
     avocado_oil:
-      name: "Avocado oil"
+      name: "Avokado aliejus"
     baby_corn_canned:
-      name: "Baby corn (canned)"
+      name: "Kukurūzai (baby, konservuoti)"
     baked_beans:
-      name: "Baked beans"
+      name: "Keptos pupelės"
     balsamic_vinegar:
-      name: "Balsamic vinegar"
+      name: "Balsamico actas"
     bamboo_shoots_canned:
-      name: "Bamboo shoots (canned)"
+      name: "Bambuko ūgliai (konservuoti)"
     bamboo_shoots_fresh:
-      name: "Bamboo shoots (fresh)"
+      name: "Bambuko ūgliai (švieži)"
     banana_common_ripe:
-      name: "Banana (common, ripe)"
+      name: "Bananai (paprasti, prinokę)"
     banana_common_unripe:
-      name: "Banana (common, unripe)"
+      name: "Bananai (paprasti, neprinokę)"
     banana_dried:
-      name: "Banana (dried)"
+      name: "Bananai (džiovinti)"
     banana_sugar_firm:
-      name: "Banana (sugar, firm)"
+      name: "Bananai (cukriniai, kieti)"
     banana_sugar_ripe:
-      name: "Banana (sugar, ripe)"
+      name: "Bananai (cukriniai, prinokę)"
     barbecue_sauce:
-      name: "Barbecue sauce"
+      name: "Barbecue padažas"
     barley_flakes:
-      name: "Barley flakes"
+      name: "Miežių dribsniai"
     barley_flour:
-      name: "Barley flour"
+      name: "Miežių miltai"
     basil_fresh:
-      name: "Basil (fresh)"
+      name: "Bazilikas (šviežias)"
     bay_leaves:
-      name: "Bay leaves"
+      name: "Lauro lapai"
     bean_sprouts:
-      name: "Bean sprouts"
+      name: "Pupų daigai"
     beef:
-      name: "Beef"
+      name: "Jautiena"
     beer:
-      name: "Beer"
+      name: "Alus"
     beetroot:
-      name: "Beetroot"
+      name: "Burokėlis"
     beetroot_canned:
-      name: "Beetroot (canned)"
+      name: "Burokėlis (konservuotas)"
     beetroot_pickled:
-      name: "Beetroot (pickled)"
+      name: "Burokėlis (marinuotas)"
     berry_juice_fruit_blend_from_juice_bar:
-      name: "Berry juice fruit blend (from juice bar)"
+      name: "Uogų sulčių ir vaisių mišinys (iš sulčių baro)"
     biscuit_with_dried_fruit:
-      name: "Biscuit with dried fruit"
+      name: "Sašausis su džiovintais vaisiais"
     bitter_melon_bitter_gourd:
-      name: "Bitter melon (bitter gourd)"
+      name: "Karbūlis (kartusis moliūgas)"
     black_beans_boiled:
-      name: "Black beans (boiled)"
+      name: "Juodosios pupelės (virtos)"
     black_beans_canned:
-      name: "Black beans (canned)"
+      name: "Juodosios pupelės (konservuotos)"
     blackberry:
-      name: "Blackberry"
+      name: "Gervuogė" 
     blueberry:
-      name: "Blueberry"
+      name: "Mėlynė"
     blueberry_jam:
-      name: "Blueberry jam"
+      name: "Mėlynių džemas"
     borlotti_beans_canned:
-      name: "Borlotti beans (canned)"
+      name: "Borlotti pupelės (konservuotos)"
     bourghal_bulgur:
-      name: "Bourghal / bulgur"
+      name: "Bulguras"
     boysenberry:
-      name: "Boysenberry"
+      name: "Avietės hibridas (bedyglė)"
     brazil_nuts:
-      name: "Brazil nuts"
+      name: "Brazilijos riešutai"
     broad_beans_fava_beans:
-      name: "Broad beans (fava beans)"
+      name: "Pupelės (fava beans)"
     broccoli_heads_only:
-      name: "Broccoli (heads only)"
+      name: "Brokolis (tik galvutės)"
     broccoli_stalks_only:
-      name: "Broccoli (stalks only)"
+      name: "Brokolis (tik koteliai)"
     broccoli_whole:
-      name: "Broccoli (whole)"
+      name: "Brokolis (visas)"
     broccolini_heads_only:
-      name: "Broccolini (heads only)"
+      name: "Broccolini (tik galvutės)"
     broccolini_stalks_only:
-      name: "Broccolini (stalks only)"
+      name: "Broccolini (tik koteliai)"
     broccolini_whole:
-      name: "Broccolini (whole)"
+      name: "Broccolini (visas)"
     brown_rice_protein_powder_sprouted_organic:
-      name: "Brown rice protein powder (sprouted, organic)"
+      name: "Rudųjų ryžių baltymų milteliai (daiginti, ekologiški)"
     brown_sugar:
-      name: "Brown sugar"
+      name: "Rudasis cukrus"
     brussel_sprouts:
-      name: "Brussel sprouts"
+      name: "Briuselio kopūstai"
     buckwheat_flour:
-      name: "Buckwheat flour"
+      name: "Grikių miltai"
     buckwheat_flour_wholemeal:
-      name: "Buckwheat flour (wholemeal)"
+      name: "Grikių miltai (wholemeal)"
     buckwheat_kernels:
-      name: "Buckwheat kernels"
+      name: "Grikių kruopos"
     butter:
-      name: "Butter"
+      name: "Sviestas"
     butter_beans_lima_beans_boiled:
-      name: "Butter beans (lima beans, boiled)"
+      name: "Sviestinės pupelės (lima pupelės, virtos)"
     butter_beans_lima_beans_canned:
-      name: "Butter beans (lima beans, canned)"
+      name: "Sviestinės pupelės (lima pupelės, konservuotos)"
     buttermilk:
-      name: "Buttermilk"
+      name: "Pienselis"
     butternut_squash:
-      name: "Butternut squash"
+      name: "Moliūgas su sviestiniu sviestu"
     cabbage_common:
-      name: "Cabbage (common)"
+      name: "Kopūstas (paprastas)"
     cabbage_red:
-      name: "Cabbage (red)"
+      name: "Kopūstas (raudonas)"
     cabbage_savoy:
-      name: "Cabbage (savoy)"
+      name: "Kopūstas (savoy)"
     cacao_powder:
-      name: "Cacao powder"
+      name: "Kakavos milteliai"
     canola_oil:
-      name: "Canola oil"
+      name: "Rapsų aliejus"
     cantaloupe_melon:
-      name: "Cantaloupe melon"
+      name: "Kantalūpas"
     capers_in_vinegar:
-      name: "Capers (in vinegar)"
+      name: "Kaperiai (vinegre)"
     capers_salted:
-      name: "Capers (salted)"
+      name: "Kaperiai (sūdyti)"
     carambola_starfruit:
-      name: "Carambola (starfruit)"
+      name: "Karambola (žvaigždinis vaisius)"
     caraway_seeds_meridian_fennel_persian_cumin:
-      name: "Caraway seeds (meridian fennel / Persian cumin)"
+      name: "Kmynų sėklos (meridianinis pankolis / persinis kuminas)"
     cardamom:
-      name: "Cardamom"
+      name: "Kardamonas"
     carob_powder:
-      name: "Carob powder"
+      name: "Saldžiųjų pupmedžių milteliai"
     carrot:
-      name: "Carrot"
+      name: "Morkos"
     cashews:
-      name: "Cashews"
+      name: "Anakardžiai"
     cashews_activated:
-      name: "Cashews (activated)"
+      name: "Anakardžiai (activated)"
     cassava:
-      name: "Cassava"
+      name: "Manijokas"
     cauliflower:
-      name: "Cauliflower"
+      name: "Kalafioras"
     caviar_dip:
-      name: "Caviar dip"
+      name: "Ikrų užtepėlė"
     celeriac:
-      name: "Celeriac"
+      name: "Saliero šaknis"
     celery:
-      name: "Celery"
+      name: "Salierai"
     cereal_bar_wheat_based:
-      name: "Cereal bar (wheat based)"
+      name: "Grūdų batonėlis (kvietinis)"
     chard:
-      name: "Chard"
+      name: "Mangoldas"
     chayote:
-      name: "Chayote"
+      name: "Čajotas"
     cheese_brie:
-      name: "Cheese (Brie)"
+      name: "Sūris (Brie)"
     cheese_camembert:
-      name: "Cheese (Camembert)"
+      name: "Sūris (Camembert)"
     cheese_cheddar:
-      name: "Cheese (Cheddar)"
+      name: "Sūris (Cheddar)"
     cheese_colby_style:
-      name: "Cheese (Colby style)"
+      name: "Sūris (Colby stiliaus)"
     cheese_cottage_cheese_creamed:
-      name: "Cheese (cottage cheese, creamed)"
+      name: "Sūris (varškės sūris, kreminis)"
     cheese_cream_cheese:
-      name: "Cheese (cream cheese)"
+      name: "Sūris (kreminis sūris)"
     cheese_feta:
-      name: "Cheese (feta)"
+      name: "Sūris (feta)"
     cheese_goats_cheese_chevre_plain:
-      name: "Cheese (goats' cheese / chevre, plain)"
+      name: "Sūris (ožkos sūris / chevre, natūralus)"
     cheese_halloumi:
-      name: "Cheese (halloumi)"
+      name: "Sūris (halloumi)"
     cheese_havarti:
-      name: "Cheese (havarti)"
+      name: "Sūris (havarti)"
     cheese_mozzarella:
-      name: "Cheese (mozzarella)"
+      name: "Sūris (mozzarella)"
     cheese_pecorino:
-      name: "Cheese (Pecorino)"
+      name: "Sūris (Pecorino)"
     cheese_quark:
-      name: "Cheese (quark)"
+      name: "Sūris (quark)"
     cheese_ricotta:
-      name: "Cheese (ricotta)"
+      name: "Sūris (ricotta)"
     cheese_soy:
-      name: "Cheese (soy)"
+      name: "Sūris (sojos)"
     cheese_swiss:
-      name: "Cheese (Swiss)"
+      name: "Sūris (Šveicariškas)"
     cherries:
-      name: "Cherries"
+      name: "Vyšnios"
     chestnuts_boiled:
-      name: "Chestnuts (boiled)"
+      name: "Kaštainiai (virti)"
     chestnuts_roasted:
-      name: "Chestnuts (roasted)"
+      name: "Kaštainiai (kepti)"
     chia_seeds:
-      name: "Chia seeds"
+      name: "Čija sėklos"
     chia_seeds_black:
-      name: "Chia seeds (black)"
+      name: "Čija sėklos (juodos)"
     chia_seeds_white:
-      name: "Chia seeds (white)"
+      name: "Čija sėklos (baltos)"
     chicken:
-      name: "Chicken"
+      name: "Vištiena"
     chickpeas_canned:
-      name: "Chickpeas (canned)"
+      name: "Avinžirniai (konservuoti)"
     chickpeas_sprouted:
-      name: "Chickpeas (sprouted)"
+      name: "Avinžirniai (daiginti)"
     chicory_leaves:
-      name: "Chicory leaves"
+      name: "Cikorijos lapai"
     chilli_green:
-      name: "Chilli (green)"
+      name: "Čili pipirai (žali)"
     chilli_red:
-      name: "Chilli (red)"
+      name: "Čili pipirai (raudoni)"
     chilli_powder:
-      name: "Chilli powder"
+      name: "Čili pipirų milteliai"
     chinese_cabbage_wombok:
-      name: "Chinese cabbage (wombok)"
+      name: "Kinų kopūstas (wombok)"
     chives:
-      name: "Chives"
+      name: "Česnakų laiškai"
     chocolate_dark:
-      name: "Chocolate (dark)"
+      name: "Šokoladas (juodas)"
     chocolate_milk:
-      name: "Chocolate (milk)"
+      name: "Šokoladas (pieninis)"
     chocolate_white:
-      name: "Chocolate (white)"
+      name: "Šokoladas (baltas)"
     chocolate_biscuit_with_cream_filling:
-      name: "Chocolate biscuit (with cream filling)"
+      name: "Šokoladinis sausainis (su kremu)"
     chocolate_chip_cookie:
-      name: "Chocolate chip cookie"
+      name: "Šokoladinis sausainis su šokolado gabaliukais"
     choi_sum:
-      name: "Choi sum"
+      name: "Čoi sum"
     chrysanthemum_greens:
-      name: "Chrysanthemum greens"
+      name: "Chrizantemos lapai"
     chutney:
-      name: "Chutney"
+      name: "Čatnis"
     cilantro_fresh:
-      name: "Cilantro (fresh)"
+      name: "Kalendra (šviežia)"
     cinnamon:
-      name: "Cinnamon"
+      name: "Cinamonas"
     clementine:
-      name: "Clementine"
+      name: "Klementinas"
     cloves:
-      name: "Cloves"
+      name: "Gvazdikėliai"
     cocoa_powder:
-      name: "Cocoa powder"
+      name: "Kakavos milteliai"
     coconut:
-      name: "Coconut"
+      name: "Kokosas"
     coconut_shredded_dried:
-      name: "Coconut (shredded, dried)"
+      name: "Kokosas (džiovintas, smulkintas)"
     coconut_flour:
-      name: "Coconut flour"
+      name: "Kokoso miltai"
     coconut_oil:
-      name: "Coconut oil"
+      name: "Kokoso aliejus"
     coconut_sugar:
-      name: "Coconut sugar"
+      name: "Kokoso cukrus"
     coconut_water_fresh:
-      name: "Coconut water (fresh)"
+      name: "Kokoso vanduo (šviežias)"
     coconut_water_packaged:
-      name: "Coconut water (packaged)"
+      name: "Kokoso vanduo (pakuotėje)"
     coffee_espresso_with_cows_milk:
-      name: "Coffee (espresso with cow's milk)"
+      name: "Kava (espresso su karvės pienu)"
     coffee_espresso_with_low_fodmap_milk:
-      name: "Coffee (espresso with low FODMAP milk)"
+      name: "Kava (espresso su low FODMAP pienu)"
     coffee_espresso_with_soy_bean_milk:
-      name: "Coffee (espresso with soy bean milk)"
+      name: "Kava (espresso su sojų pupelių pienu)"
     coffee_espresso_black:
-      name: "Coffee (espresso, black)"
+      name: "Kava (espresso, juoda)"
     coffee_espresso_decaf_with_cows_milk:
-      name: "Coffee (espresso, decaf with cow's milk)"
+      name: "Kava (espresso, decaf su karvės pienu)"
     coffee_espresso_decaf_with_low_fodmap_milk:
-      name: "Coffee (espresso, decaf with low FODMAP milk)"
+      name: "Kava (espresso, decaf su low FODMAP pienu)"
     coffee_espresso_decaf_with_soy_bean_milk:
-      name: "Coffee (espresso, decaf with soy bean milk)"
+      name: "Kava (espresso, decaf su sojų pupelių pienu)"
     coffee_espresso_decaf_black:
-      name: "Coffee (espresso, decaf, black)"
+      name: "Kava (espresso, decaf, juoda)"
     coffee_instant_with_cows_milk:
-      name: "Coffee (instant with cow's milk)"
+      name: "Kava (instant su karvės pienu)"
     coffee_instant_with_low_fodmap_milk:
-      name: "Coffee (instant with low FODMAP milk)"
+      name: "Kava (instant su low FODMAP pienu)"
     coffee_instant_with_soy_bean_milk:
-      name: "Coffee (instant with soy bean milk)"
+      name: "Kava (instant su sojų pupelių pienu)"
     coffee_instant_black:
-      name: "Coffee (instant, black)"
+      name: "Kava (instant, juoda)"
     coffee_instant_decaf_with_cows_milk:
-      name: "Coffee (instant, decaf with cow's milk)"
+      name: "Kava (instant, decaf su karvės pienu)"
     coffee_instant_decaf_with_low_fodmap_milk:
-      name: "Coffee (instant, decaf with low FODMAP milk)"
+      name: "Kava (instant, decaf su low FODMAP pienu)"
     coffee_instant_decaf_with_soy_bean_milk:
-      name: "Coffee (instant, decaf with soy bean milk)"
+      name: "Kava (instant, decaf su sojų pupelių pienu)"
     coffee_instant_decaf_black:
-      name: "Coffee (instant, decaf, black)"
+      name: "Kava (instant, decaf, juoda)"
     coriander_fresh:
-      name: "Coriander (fresh)"
+      name: "Koriandras (šviežias)"
     coriander_seeds:
-      name: "Coriander seeds"
+      name: "Koriandro sėklos"
     corn_flakes:
-      name: "Corn flakes"
+      name: "Kukurūzų dribsniai"
     corn_flakes_gluten_free:
-      name: "Corn flakes (gluten free)"
+      name: "Kukurūzų dribsniai (be glitimo)"
     corn_flour:
-      name: "Corn flour"
+      name: "Kukurūzų miltai"
     corn_starch_flour:
-      name: "Corn starch flour"
+      name: "Kukurūzų krakmolo miltai"
     corn_thins_plain:
-      name: "Corn thins (plain)"
+      name: "Kukurūzų trapučiai (natūralūs)"
     corn_thins_sour_cream_and_chive_flavour:
-      name: "Corn thins (sour cream and chive flavour)"
+      name: "Kukurūzų trapučiai (sour cream and chive flavour)"
     cornbread:
-      name: "Cornbread"
+      name: "Kukurūzų duona"
     courgette_zucchini:
-      name: "Courgette (zucchini)"
+      name: "Cukinija"
     couscous_rice_corn:
-      name: "Couscous (rice & corn)"
+      name: "Kuskusas (ryžių & kukurūzų)"
     couscous_wheat:
-      name: "Couscous (wheat)"
+      name: "Kuskusas (kvietinis)"
     cranberries_dried:
-      name: "Cranberries (dried)"
+      name: "Džiovintos spanguolės"
     cranberry_juice:
-      name: "Cranberry juice"
+      name: "Spanguolių sultys"
     cream_regular_fat:
-      name: "Cream (regular fat)"
+      name: "Grietinėlė (įprasto riebumo)"
     cream_sour:
-      name: "Cream (sour)"
+      name: "Grietinė (rūgšti)"
     cream_thickened_regular_fat:
-      name: "Cream (thickened, regular fat)"
+      name: "Grietinėlė (plakta, įprasto riebumo)"
     cream_whipped:
-      name: "Cream (whipped)"
+      name: "Grietinėlė (plakta)"
     crisps_plain:
-      name: "Crisps (plain)"
+      name: "Čipsai (natūralūs)"
     crisps_salted_potato_straws:
-      name: "Crisps (salted potato straws)"
+      name: "Čipsai (druska ir bulvių šiaudeliai)"
     cucumber:
-      name: "Cucumber"
+      name: "Agurkas"
     cumin:
-      name: "Cumin"
+      name: "Kuminas"
     currants:
-      name: "Currants"
+      name: "Juodieji serbentai"
     curry_leaves_fresh:
-      name: "Curry leaves (fresh)"
+      name: "Kario lapai (švieži)"
     curry_powder:
-      name: "Curry powder"
+      name: "Kario milteliai"
     custard:
-      name: "Custard"
+      name: "Kremas (vanilinis)"
     custard_apple_sugar_apple:
       name: "Custard apple (sugar apple)"
     daikon_mooli_white_winter_radish:
@@ -1417,3 +1417,6 @@ en:
       name: "Yoghurt (natural, Greek)"
     tomatillo_fresh:
       name: "Tomatillo (fresh)"
+      
+
+    
