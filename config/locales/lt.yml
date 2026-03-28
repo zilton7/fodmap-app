@@ -1,5 +1,31 @@
 lt:
+  category:
+    names:
+      bread_cereal_rice_pasta: "Duona, dribsniai, ryžiai, makaronai"
+      condiments: "Prieskoniai"
+      vegetables: "Daržovės"
+      confectionery_sugars_sweeteners: "Saldainiai, cukrus, saldikliai"
+      nuts_seeds: "Riešutai ir sėklos"
+      fruit: "Vaisiai"
+      drinks: "Gėrimai"
+      dairy: "Pienas, sūris, jogurtas"
+      fats_oils: "Riebalai ir aliejai"
+      snacks: "Užkandžiai"
+      meat_fish_eggs: "Mėsa, žuvis, kiaušiniai"
   foods:
+    status:
+      high: "Aukštas"
+      medium: "Vidutinis"
+      low: "Žemas"
+    show:
+      overall_status: "Bendras Vertinimas"
+      portion_details: "Porcijos detalės"
+      portion: "Porcija"
+      oligos: "Oligosacharidai"
+      fructose: "Fruktozė"
+      galactans: "Galaktozai"
+      polyols: "Polioliai"
+      
     acai_powder:
       name: "Acai milteliai"
     adzuki_beans_boiled:
@@ -46,6 +72,8 @@ lt:
       name: "Obuolių sultys (99% atstatytos)"
     apricot:
       name: "Abrikosas"
+      small_portion_desc: "Vienas abrikosas (apie 60g)"
+      large_portion_desc: "Du abrikosai (apie 120g)"
     apricot_canned:
       name: "Abrikosas (konservuotas)"
     apricot_dried:

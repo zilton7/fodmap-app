@@ -45,7 +45,7 @@
           <%= link_to food_path(food), data: { turbo_frame: "modal" }, class: "#{status_colors} rounded-xl shadow-sm border border-gray-100 p-5 hover:shadow-md transition-shadow flex flex-col justify-between" do %>
             <div class="mb-2">
               <h2 class="text-xl font-semibold text-gray-800"><%= food_name(food) %></h2>
-              <p class="text-sm text-gray-500 capitalize"><%= food.category.to_s.gsub('_', ' ') %></p>
+              <p class="text-sm text-gray-500 capitalize"><%= category_name(food) %></p>
             </div>
             <% if File.exist?("app/assets/images/foods/#{food.image_file_name || food.name.downcase.gsub(' ', '_')}.webp") %>
               <%= image_tag "foods/#{food.image_file_name || food.name.downcase.gsub(' ', '_')}.webp", alt: food.name, class: "w-full h-64 object-contain rounded-lg drop-shadow-lg" %>

@@ -25,7 +25,11 @@
 
   <body>
     <header class="fixed top-0 inset-x-0 bg-white shadow-sm z-40">
-      <div class="container mx-auto px-5 py-4 flex justify-end items-center">
+      <div class="container mx-auto px-5 py-4 flex justify-between items-center">
+
+        <%= link_to '/downloads/fodmap-app.apk', { target: '_blank' }, data: { turbo: false } do %>
+          <%= image_tag "android-download.svg", alt: "Download for Android", class: "h-10 text-gray-500" %>
+        <% end %>
         <%= form_with url: url_for(only_path: true), method: :get, data: { controller: "locale" }, class: "inline-block" do |f| %>
           <% request.query_parameters.except(:locale).each do |key, value| %>
             <%= hidden_field_tag key, value %>

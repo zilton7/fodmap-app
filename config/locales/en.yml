@@ -1,5 +1,31 @@
 en:
+  category:
+    names:
+      bread_cereal_rice_pasta: "Bread, cereal, rice, pasta"
+      condiments: "Condiments"
+      vegetables: "Vegetables"
+      confectionery_sugars_sweeteners: "Confectionery, sugars, sweeteners"
+      nuts_seeds: "Nuts & seeds"
+      fruit: "Fruit"
+      drinks: "Drinks"
+      dairy: "Dairy"
+      fats_oils: "Fats & oils"
+      snacks: "Snacks"
+      meat_fish_eggs: "Meat, fish, eggs"
   foods:
+    status:
+      high: "High"
+      medium: "Medium"
+      low: "Low"
+    show:
+      overall_status: "Overall Status"
+      portion_details: "Portion details"
+      portion: "Portion"
+      oligos: "Oligos"
+      fructose: "Fructose"
+      galactans: "Galactans"
+      polyols: "Polyols"
+      
     acai_powder:
       name: "Acai Powder"
     adzuki_beans_boiled:
@@ -46,6 +72,8 @@ en:
       name: "Apple juice (99% reconstituted)"
     apricot:
       name: "Apricot"
+      small_portion_desc: "One apricot (approx 60g)"
+      large_portion_desc: "Two apricots (approx 120g)"
     apricot_canned:
       name: "Apricot (canned)"
     apricot_dried:
