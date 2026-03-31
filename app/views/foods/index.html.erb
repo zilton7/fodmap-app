@@ -9,9 +9,11 @@
     </style>
 <div class="w-full">
   <%= turbo_frame_tag "foods" do %>
-    <div class="mb-4 flex justify-end">
-      <%= link_to "New Food", new_food_path, class: "inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500", data: { turbo_frame: "_top" } %>
-    </div>
+    <% if defined?(current_user) && current_user&.admin? %>
+      <div class="mb-4 flex justify-end">
+        <%= link_to "New Food", new_food_path, class: "inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500", data: { turbo_frame: "_top" } %>
+      </div>
+    <% end %>
     <% if @foods.any? %>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <% @foods.each do |food| %>

@@ -1,4 +1,5 @@
 class FoodsController < ApplicationController
+  allow_unauthenticated_access only: %i[ index show ]
   before_action :set_food, only: %i[ show edit update destroy ]
 
   def index

@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  include Authentication
   # Only allow modern browsers supporting webp images, web push, badges, import maps, CSS nesting, and CSS :has.
   allow_browser versions: :modern
 
@@ -12,5 +13,12 @@ class ApplicationController < ActionController::Base
       session[:locale] = params[:locale]
     end
     I18n.locale = session[:locale] || I18n.default_locale
+  end
+
+  helper_method :current_user
+
+  def current_user
+    resume_session unless Current.session
+    Current.user
   end
 end
