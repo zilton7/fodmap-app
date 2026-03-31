@@ -26,7 +26,20 @@
               %>
           <%= link_to food_path(food), data: { turbo_frame: "modal" }, class: "#{status_colors} rounded-xl shadow-sm border border-gray-100 p-5 hover:shadow-md transition-shadow flex flex-col justify-between" do %>
             <div class="mb-2">
-              <h2 class="text-xl font-semibold text-gray-800"><%= food_name(food) %></h2>
+              <div class="flex items-center justify-between">
+                <h2 class="text-xl font-semibold text-gray-800"><%= food_name(food) %></h2>
+                <% if food.notes.present? %>
+                  <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                    </g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path d="M12 15H12.01M12 12V9M4.98207 19H19.0179C20.5615 19 21.5233 17.3256 20.7455 15.9923L13.7276 3.96153C12.9558 2.63852 11.0442 2.63852 10.2724 3.96153L3.25452 15.9923C2.47675 17.3256 3.43849 19 4.98207 19Z" stroke="#a51d2d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      </path>
+                    </g>
+                  </svg>
+                <% end %>
+              </div>
               <p class="text-sm text-gray-500 capitalize"><%= category_name(food) %></p>
             </div>
             <% if File.exist?("app/assets/images/foods/#{food.image_file_name || food.name.downcase.gsub(' ', '_')}.webp") %>

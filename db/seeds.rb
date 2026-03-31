@@ -3,7 +3,7 @@ require 'csv'
 csv_file = File.read(Rails.root.join('lib', 'data', 'fodmap_foods.csv'))
 csv = CSV.parse(csv_file, headers: true)
 
-Food.delete_all
+return if Food.any?
 
 csv.each do |row|
   attrs = {
