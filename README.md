@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+Generate images at:
+https://gemini.google.com/app/7be28f18d563473f
+https://gemini.google.com/app/a26d3575784dc8c1
